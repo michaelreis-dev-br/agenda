@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import filtroReducer from './reducers/filtro'
-import tarefasReducer from './reducers/tarefas'
+import filterReducer from './reducers/filter'
+import contactReducer from './reducers/contact'
 
 const store = configureStore({
-  reducer: { tarefas: tarefasReducer, filtro: filtroReducer }
+  reducer: { contact: contactReducer, filter: filterReducer }
 })
 
 export type RootReducer = ReturnType<typeof store.getState>
